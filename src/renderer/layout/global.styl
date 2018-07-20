@@ -1,0 +1,40 @@
+*
+  margin: 0px
+  padding: 0px
+  border: 0px
+
+html, body, #root
+  overflow hidden
+  width 320px
+  font-size: 12px
+  user-select none
+  cursor: default
+
+#root
+  box-sizing: border-box
+  border: 1px solid #fff
+  transition: .5s
+  position: relative
+
+#root.focus
+    border: 1px solid #0AC
+
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+  width 8px;
+  border-left: 1px solid #AAA;
+}
+ 
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+  background: linear-gradient(90deg, #CCC, #FFF);
+}
+ 
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+  background: #888;
+}

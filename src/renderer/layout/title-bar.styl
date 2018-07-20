@@ -1,0 +1,40 @@
+#title-bar
+  background: #fff
+  height 24px
+  color: #000
+  line-height: 24px
+  text-align: center
+  position relative
+  .content
+    display: flex
+    width 100%
+    height 100%
+    position: absolute
+    top 0
+    .darg-area
+      flex: 1
+      width 100px
+      text-align: center
+      line-height: 24px
+      -webkit-app-region: drag  // 声明该元素可拖动
+    .icon
+      width 24px
+      background: #0ff
+  // .console
+
+#title-bar.nt
+  .console
+    display: flex
+    >div
+      transition: .25s
+      width: 30px
+      height 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      &:hover
+        transition: 0s
+        background: #DDD
+      &:hover.close
+        background: #E00
+        color: #fff
